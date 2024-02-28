@@ -8,13 +8,48 @@
   <meta name="supported-color-schemes" content="light dark" /> -->
   <title>Inuulisautinut Niuvirvik Optical Center</title>
   <style type="text/css">
+    body,
+    table,
+    td,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    table,
+    td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
     table {
       border-spacing: 0;
     }
     td {
       padding: 0;
     }
-    p {
+
+    /* RESET STYLES */
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+    table {
+      border-collapse: collapse !important;
+    }
+    body {
+      height: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+    }
+
+
+    /* p {
       font-size: 18px;
       margin: 0;
       padding: 0;
@@ -22,9 +57,6 @@
     a {
       color: #03a3d3;
       text-decoration: none;
-    }
-    img {
-      border: 0;
     }
     .column {
       width: 30%;
@@ -71,6 +103,26 @@
     }
     .social {
       padding: 0 20px 0 20px;
+    } */
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: inherit !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* GMAIL BLUE LINKS */
+    u + #body a {
+      color: inherit;
+      text-decoration: inherit;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
     }
 
     @media screen and (max-width: 599.98px) {
@@ -79,40 +131,16 @@
         max-width: 300px !important;
         width: 100% !important;
       }
-      .recipeHeading {
-        font-size: 20px !important;
-      }
-      .headerLogo {
-        text-align: center !important;
-      }
-      .emailFeature {
-        height: auto !important;
-        max-width: 600px !important;
+      .responsive-table {
         width: 100% !important;
       }
-      .featureHeader {
-        font-size: 32px;
-        line-height: 38px;
-      }
-      .column {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 0 10px 0 !important;
-      }
-      .content {
-        width: 300px !important;
-        padding: 0 20px 0 20px !important;
-      }
-      .iconText {
-        font-size: 24px !important;
+      .mobile-copy {
+        font-size: 18px !important;
         line-height: 28px !important;
       }
-      .icon {
-        width: 100px !important;
+      .mobile-img {
+        display: none !important;
       }
-      .information {
-        text-align: center;
-      } 
     }
     @media screen and (max-width: 399.98px) {
 
@@ -138,7 +166,7 @@
     </style>
   <![endif]-->
 </head>
-<body style="margin:0;padding:0;min-width:100%;background-color:#fafdfe;">
+<body id="body" style="margin:0 !important; padding:0 !important; min-width:100%; background-color:#fafdfe;">
 
   <!--[if (gte mso 9)|(IE)]>
     <style type="text/css">
@@ -214,6 +242,29 @@
                 </tr>
               </table>
             <![endif]-->
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding: 20px 10px 40px 10px;">
+
+            <!--[if (gte mso 9)|(IE)]>
+              <table role="presentation" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing:0; margin-bottom:40px;">
+                <tr>
+                  <td valign="top" style="font-size:0; text-align:center;">
+            <![endif]-->
+
+            <table role="presentation" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing:0; margin-bottom:40px;">
+              <tr>
+                <td width="35%">
+                  <h2>Simple Cheese Fondue</h2>
+                  <p><strong>Cheese fondue</strong> is a fun and loving treat to prepare for your loved ones on Valentine’s Day.</p>
+                </td>
+                <td width="60%">
+                  <img src="img/justForYou_recipe_simple-cheese-fondue_668x490-min.jpg" alt="recipe image" title="recipe image" width="600" border="0" style="width:100%; max-width:600px;">
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
         <!-- END RECIPES SECTION -->
