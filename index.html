@@ -31,8 +31,14 @@
     h2 {
       margin: 0;
     }
+    h3 {
+      color: #0B7E9A;
+      margin: 10px 0 20px 0 !important;
+    }
     p {
       font-size: 16px;
+      color: #5C5C5C;
+      margin-top: 0;
     }
     img {
       border: 0;
@@ -40,12 +46,32 @@
     a {
       text-decoration: none;
       color: #3d3d3d;
-      font-size: 16px;
     }
     .content {
       line-height: 20px;
       font-size: 16px;
     }
+
+      /*-- SIMPLE TWO COLUMNS LESSON --*/
+      .column-wrapper {
+      padding: 0;
+      font-size: 0;
+      text-align: center;
+      }
+      .column {
+         border-spacing: 0;
+         vertical-align: top;
+         width: 100%;
+         display: inline-block;
+         color: #ffffff;
+      }
+      .column-one-half {
+         max-width: 300px;
+      }
+      .padding {
+         padding: 20px;
+      }
+
     u + .body .gmail-blend-screen {
       background: #000000;
       mix-blend-mode: screen;
@@ -95,14 +121,39 @@
     }
 
     @media screen and (max-width: 599.98px) {
-
+      h2 {
+        font-size: 20px !important;
+      }
+      h3 {
+        margin: 20px 0 20px 0 !important;
+      }
+      .column-one-half {
+      	max-width: 600px !important;
+      }
+      img {
+      	width: 100% !important;
+      }
+      .column-wrapper {
+        padding: 15px 0 !important;
+      }
+      .padding {
+        padding: 5px 20px 0 !important;
+      }
+      .column-wrapper.fluid-hybrid .column,
+      .column-wrapper.fluid-hybrid .column img {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .column-wrapper.fluid-hybrid {
+        padding: 15px 30px !important;
+      }
     }
 
     @media screen and (max-width: 399.98px) {
       
     }
 
-    /* :root {
+     :root {
       color-scheme: light dark;
       supported-color-schemes: light dark;
     }
@@ -110,6 +161,12 @@
       body, table {
         background: #2d2d2d !important;
         color: #ffffff !important;
+      }
+      h3 {
+        color: #ffffff;
+      }
+      p {
+        color: #ffffff;
       }
       .darkmode-transparent {
         background-color: transparent !important;
@@ -121,7 +178,7 @@
       [data-ogsc] .darkmode-transparent {
         background-color: transparent !important;
       }
-    } */
+    } 
   </style>
   <!--[if mso]>
     <style type="text/css">
@@ -168,7 +225,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="emailHead" style="text-align: left; background-color: #34BBD7; font-family: Helvetica, Arial, sans-serif; color: #ffffff; padding: 12px 25px 12px 25px; display: block;">
+                  <td class="emailHead" style="text-align: left; background-color: #34BBD7; font-family: Helvetica, Arial, sans-serif; color: #ffffff; padding: 12px 15px 12px 25px; display: block;">
                     <h1><span style="font-weight:400;">my</span>HEALTH <span style="font-weight:400;">monthly</span></h1>
                   </td>
                 </tr>
@@ -181,12 +238,51 @@
 
         <!-- START RECIPES SECTION -->
         <tr>
-          <td class="recipe" style="padding: 20px 0 0 0; display: block;">
-
+          <td class="recipe" style="padding: 20px 0 20px 0; display: block;">
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+
               <tr>
-                <td class="recipeBanner" style="text-align: left; background-color: #0B7E9A; font-family: Helvetica, Arial, sans-serif; color: #ffffff; padding: 12px 25px 12px 25px; display: block;">
+                <td class="recipeBanner" style="text-align: left; background-color: #0B7E9A; font-family: Helvetica, Arial, sans-serif; color: #ffffff; padding: 12px 15px 12px 25px; display: block;">
                   <h2>Delicious and Quick Recipe Ideas</h2>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="column-wrapper" style="padding: 20px 0 0 0; font-size: 0; text-align: left;" dir="rtl">
+
+                  <!--[if mso]>
+                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                    <tr>
+                    <td width="300" valign="top" style="padding: 20px 0 0 0;">
+                  <![endif]-->
+
+                  <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block;" role="presentation">
+                    <tr>
+                      <td class="padding" style="padding: 0;">
+                        <a href=""><img src="img/justForYou_recipe_simple-cheese-fondue_668x490-min.jpg" alt="Simple Cheese Fondue" width="300"></a>
+                      </td>
+                    </tr>
+                  </table>
+
+                   <!--[if mso]>
+                   </td><td width="300" valign="top" style="padding: 0;" dir="ltr">
+                  <![endif]-->
+
+                  <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block;" role="presentation" dir="ltr">
+                    <tr>
+                      <td class="padding" style="padding: 0 20px 0 20px; ">
+                        <h3 style="font-size: 22px; font-weight: 700;">Simple Cheese Fondue</h3>
+                        <p><strong>Cheese fondue</strong> is a fun and loving treat to prepare for your loved ones on Valentine’s Day.</p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!--[if mso]>
+                    </table>
+                    </tr>
+                    </td>
+                  <![endif]-->
+
                 </td>
               </tr>
             </table>
