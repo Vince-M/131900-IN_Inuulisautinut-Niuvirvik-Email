@@ -31,22 +31,34 @@
     h2 {
       margin: 0;
     }
+    h2 {
+      font-size: 24px !important;
+    }
     h3 {
-      color: #0B7E9A;
       margin: 10px 0 20px 0 !important;
     }
+
     p {
       font-size: 16px;
+      line-height: 20px;
       color: #5C5C5C;
       margin-top: 0;
     }
+
+    .recipe-title,
+    .recipe-btn-title {
+        color: #0B7E9A !important;
+    }
+
+    a.recipe-btn-title:hover {
+      color: #ffffff !important;
+      transition: all 50ms ease-in-out;
+    }
+
     img {
       border: 0;
     }
-    a {
-      text-decoration: none;
-      color: #3d3d3d;
-    }
+
     .content {
       line-height: 20px;
       font-size: 16px;
@@ -92,14 +104,29 @@
       line-height: 100%;
     }
 
+    a {
+      text-decoration: none;
+      color: #3d3d3d;
+      font-size: 18px;
+    }
+
     /* iOS BLUE LINKS */
-    a[x-apple-data-detectors=true] {
-      color: inherit !important;
-      text-decoration: inherit !important;
-      font-size: inherit !important;
-      font-family: inherit !important;
-      font-weight: inherit !important;
-      line-height: inherit !important;
+    a[x-apple-data-detectors=true]{
+        color: inherit !important;
+        text-decoration: inherit !important;
+    }
+
+    a.recipe-btn {
+        transition: all .7s !important;
+    }
+    a.recipe-btn:hover {
+        background-color: #0B7E9A !important;
+        border: 1px solid #0B7E9A !important;
+    }
+
+    .recipe-btn:hover {
+      background-color: #0B7E9A !important;
+      color: #ffffff !important;
     }
 
     /* GMAIL BLUE LINKS */
@@ -122,7 +149,7 @@
 
     @media screen and (max-width: 599.98px) {
       h2 {
-        font-size: 20px !important;
+        font-size: 22px !important;
       }
       h3 {
         margin: 20px 0 20px 0 !important;
@@ -153,7 +180,7 @@
       
     }
 
-     :root {
+     /* :root {
       color-scheme: light dark;
       supported-color-schemes: light dark;
     }
@@ -178,7 +205,7 @@
       [data-ogsc] .darkmode-transparent {
         background-color: transparent !important;
       }
-    } 
+    }  */
   </style>
   <!--[if mso]>
     <style type="text/css">
@@ -243,7 +270,7 @@
 
               <tr>
                 <td class="recipeBanner" style="text-align: left; background-color: #0B7E9A; font-family: Helvetica, Arial, sans-serif; color: #ffffff; padding: 12px 15px 12px 25px; display: block;">
-                  <h2>Delicious and Quick Recipe Ideas</h2>
+                  <h2 style="font-size: 24px; color: #ffffff;">Delicious and Quick Recipe Ideas</h2>
                 </td>
               </tr>
 
@@ -271,8 +298,37 @@
                   <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block;" role="presentation" dir="ltr">
                     <tr>
                       <td class="padding" style="padding: 0 20px 0 20px; ">
-                        <h3 style="font-size: 22px; font-weight: 700;">Simple Cheese Fondue</h3>
-                        <p><strong>Cheese fondue</strong> is a fun and loving treat to prepare for your loved ones on Valentine’s Day.</p>
+                        <h3 class="recipe-title" style="font-size: 22px; font-weight: 700; color: #0B7E9A;">Simple Cheese Fondue</h3>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="padding" style="padding: 0 20px 0 20px; font-size: 16px; line-height: 20px;">
+                        <p><strong>Cheese fondue</strong> is a fun and loving treat to prepare for your loved ones on Valentine's Day.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td style="padding: 10px 0;">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                        
+                          <tr>
+                            <td align="center" style="padding: 20px;">
+                              <table align="center" style="border-spacing: 0;" role="presentation">
+
+                                <tr>
+                                  <td align="center">
+
+                                    <a href="https://example.com" class="recipe-btn" target="_blank" style="font-size: 20px; font-weight: normal; text-decoration: none; color: #0B7E9A; padding: 12px 24px 12px 24px; border: 1px solid #0B7E9A; display: inline-block; mso-hide: all;">get the RECIPE</a>
+                                    
+                                  </td>
+                                </tr>
+
+                              </table>
+                            </td>
+                          </tr>
+
+                        </table>
                       </td>
                     </tr>
                   </table>
@@ -291,11 +347,138 @@
         </tr>
         <!-- END RECIPES SECTION -->
 
-        <!-- START LIFESTLE SECTION -->
-        <!-- END RECIPES SECTION -->
+        <!-- START LIFESTYLE SECTION -->
+        <tr>
+          <td class="recipe" style="padding: 20px 0 20px 0; display: block;">
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+
+              <tr>
+                <td class="recipeBanner" style="text-align: left; background-color: #33C3DF; font-family: Helvetica, Arial, sans-serif; color: #ffffff; padding: 12px 15px 12px 25px; display: block;">
+                  <h2 style="font-size: 24px; color: #ffffff;">Lifestyle</h2>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="column-wrapper" style="padding: 20px 0 0 0; font-size: 0; text-align: left;">
+
+                  <!--[if mso]>
+                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                    <tr>
+                    <td width="300" valign="top" style="padding: 20px 0 0 0;">
+                  <![endif]-->
+
+                  <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block;" role="presentation">
+                    <tr>
+                      <td class="padding" style="padding: 0;">
+                        <a href=""><img src="img/justForYou_lifestyle_january-nutrition-goals_668x490-min.jpg" alt="Simple Cheese Fondue" width="300"></a>
+                      </td>
+                    </tr>
+                  </table>
+
+                   <!--[if mso]>
+                   </td><td width="300" valign="top" style="padding: 0;">
+                  <![endif]-->
+
+                  <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block;" role="presentation">
+                    <tr>
+                      <td class="padding" style="padding: 0 20px 0 20px; ">
+                        <h3 class="lifestyle-title"  style="font-size: 22px; font-weight: 700; color: #33C3DF;">January Nutrition Goals</h3>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="padding" style="padding: 0 20px 0 20px; font-size: 16px; line-height: 20px;">
+                        <p>How to Create a Nutrition and Exercise Plan You Can Keep.</p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!--[if mso]>
+                    </table>
+                    </tr>
+                    </td>
+                  <![endif]-->
+
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+        <!-- END LIFESTYLE SECTION -->
 
         <!-- START OPTICAL SECTION -->
-        <!-- END RECIPES SECTION -->
+        <tr>
+          <td class="recipe" style="padding: 20px 0 20px 0; display: block;">
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+
+              <tr>
+                <td class="recipeBanner" style="text-align: left; background-color: #0B7E9A; font-family: Helvetica, Arial, sans-serif; color: #ffffff; padding: 12px 15px 12px 25px; display: block;">
+                  <h2 style="font-size: 24px; color: #ffffff;">Delicious and Quick Recipe Ideas</h2>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="column-wrapper" style="padding: 20px 0 0 0; font-size: 0; text-align: left;" dir="rtl">
+
+                  <!--[if mso]>
+                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                    <tr>
+                    <td width="300" valign="top" style="padding: 20px 0 0 0;">
+                  <![endif]-->
+
+                  <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block;" role="presentation">
+                    <tr>
+                      <td class="padding" style="padding: 0;">
+                        <a href=""><img src="img/justForYou_recipe_simple-cheese-fondue_668x490-min.jpg" alt="Simple Cheese Fondue" width="300"></a>
+                      </td>
+                    </tr>
+                  </table>
+
+                   <!--[if mso]>
+                   </td><td width="300" valign="top" style="padding: 0;" dir="ltr">
+                  <![endif]-->
+
+                  <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block;" role="presentation" dir="ltr">
+                    <tr>
+                      <td class="padding" style="padding: 0 20px 0 20px; ">
+                        <h3 class="recipe-title" style="font-size: 22px; font-weight: 700; color: #0B7E9A;">Simple Cheese Fondue</h3>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="padding" style="padding: 0 20px 0 20px; font-size: 16px; line-height: 20px;">
+                        <p><strong>Cheese fondue</strong> is a fun and loving treat to prepare for your loved ones on Valentine's Day.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td style="padding: 10px 0;">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                        
+                          <tr>
+                            <td class="recipe-btn" style="background-color: #ffffff; border: 1px solid #0B7E9A; padding: 12px; margin: 0 20px 0 20px; display: block; text-align: center;">
+                              <a href="#" class="recipe-btn-title" style="text-align: center; font-size: 20px; margin: 0;">get the RECIPE</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!--[if mso]>
+                    </table>
+                    </tr>
+                    </td>
+                  <![endif]-->
+
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+        <!-- END ROPTICAL SECTION -->
 
         <!-- START WEBSITE BANNER SECTION -->
         <!-- END WEBSITE BANNER SECTION -->
