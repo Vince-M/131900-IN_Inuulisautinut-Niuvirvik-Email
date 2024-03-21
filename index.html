@@ -305,7 +305,7 @@
                   <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 280px; display: inline-block;" role="presentation">
                     <tr>
                       <td class="padding" style="padding: 0;">
-                        <a href=""><img src="http://placehold.it/560x490" alt="Recipe name" width="280"></a>
+                        <a href="#"><img src="http://placehold.it/560x490" alt="Recipe name" width="280"></a>
                       </td>
                     </tr>
                   </table>
@@ -329,12 +329,12 @@
 
                     <!-- BUTTON MODULE -->
                     <tr>
-                      <td align="left" style="padding-left: 20px;"> <!-- align & padding -->
-                        <table style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
+                      <td align="left" style="padding: 20px 0 0 20px;"> <!-- align & padding -->
+                        <table border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
                         
                           <tr>
-                            <td align="left" bgcolor="#0B7E9A"> <!-- align, border-radius, bgcolor -->
-                              <a class="recipe-btn"  href="https://example.com" target="_blank" style="font-size: 20px; font-weight: normal; text-decoration: none; color: #0B7E9A; background-color: #ffffff; padding: 12px 24px; border: 1px solid #0B7E9A; display: inline-block;">get the RECIPE</a>
+                            <td> <!-- align, border-radius, bgcolor -->
+                              <a class="recipe-btn" href="https://example.com" target="_blank" style="font-size: 20px; font-weight: normal; font-family: Helvetica, Arial, sans-serif; text-decoration: none; color: #0B7E9A; background-color: #ffffff; padding: 12px 24px; border: 1px solid #0B7E9A; display: inline-block;">get the RECIPE</a>
                             </td>
                           </tr>
 
@@ -405,12 +405,12 @@
 
                     <!-- BUTTON MODULE -->
                     <tr>
-                      <td align="left" style="padding-left: 20px;"> <!-- align & padding -->
-                        <table style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
+                      <td align="left" style="padding: 20px 0 0 20px;"> <!-- align & padding -->
+                        <table border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
                         
                           <tr>
-                            <td align="left" bgcolor="#33C3DF"> <!-- align, border-radius, bgcolor -->
-                              <a class="lifestyle-btn"  href="https://example.com" target="_blank" style="font-size: 20px; font-weight: normal; text-decoration: none; color: #33C3DF; background-color: #ffffff; padding: 12px 24px; border: 1px solid #33C3DF; display: inline-block;">view HEALTH TIP</a>
+                            <td> <!-- align, border-radius, bgcolor -->
+                              <a class="recipe-btn" href="https://example.com" target="_blank" style="font-size: 20px; font-weight: normal; font-family: Helvetica, Arial, sans-serif; text-decoration: none; color: #33C3DF; background-color: #ffffff; padding: 12px 24px; border: 1px solid #33C3DF; display: inline-block;">view HEALTH TIP</a>
                             </td>
                           </tr>
 
@@ -481,12 +481,12 @@
 
                     <!-- BUTTON MODULE -->
                     <tr>
-                      <td align="left" style="padding-left: 20px;"> <!-- align & padding -->
-                        <table style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
+                      <td align="left" style="padding: 20px 0 0 20px;"> <!-- align & padding -->
+                        <table border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
                         
                           <tr>
-                            <td align="left" bgcolor="#91CA45"> <!-- align, border-radius, bgcolor -->
-                              <a class="optical-btn"  href="https://example.com" target="_blank" style="font-size: 20px; font-weight: normal; text-decoration: none; color: #91CA45; background-color: #ffffff; padding: 12px 24px; border: 1px solid #91CA45; display: inline-block;">view OPTICAL</a>
+                            <td> <!-- align, border-radius, bgcolor -->
+                              <a class="recipe-btn" href="https://example.com" target="_blank" style="font-size: 20px; font-weight: normal; font-family: Helvetica, Arial, sans-serif; text-decoration: none; color: #91CA45; background-color: #ffffff; padding: 12px 24px; border: 1px solid #91CA45; display: inline-block;">view OPTICAL</a>
                             </td>
                           </tr>
 
@@ -508,14 +508,21 @@
 
           </td>
         </tr>
-        <!-- END ROPTICAL SECTION -->
+        <!-- END OPTICAL SECTION -->
 
         <!-- START WEBSITE BANNER SECTION -->
         <tr>
-          <td style="padding: 20px 0;"> <!-- Padding Vertically -->
-            <table width="100%" style="border-spacing: 0;" role="presentation"> <!-- Standard table -->
+          <td style="padding: 20px; display: block;"> <!-- Padding Vertically -->
+
+            <!--[if mso]>
+              <table width="100%" style="border-spacing: 0; width: 100%; max-width: 560px; text-align: center;" role="presentation">
               <tr>
-                <td class="column-wrapper" style="padding: 0; font-size: 0; text-align: center;"> <!-- Column Wrapper media query padding -->
+              <td class="column-wrapper" style="padding: 0; font-size: 0; text-align: left;">
+            <![endif]-->
+
+            <table width="100%" style="border-spacing: 0; width: 100%; max-width: 560px; text-align: center;" role="presentation"> <!-- Standard table -->
+              <tr>
+                <td class="column-wrapper" style="padding: 0; font-size: 0; text-align: left;"> <!-- Column Wrapper media query padding -->
 
                   <table class="column column-one-half" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 334px; display: inline-block;" role="presentation"> <!-- Column (300px width) -->
                     <tr>
@@ -525,28 +532,25 @@
                     </tr>
                   </table>
 
-                </td>
+                  <!--[if mso]>
+                   </td><td width="226" valign="top" style="padding: 0;" dir="ltr">
+                  <![endif]-->
 
-                <td class="column-wrapper" style="padding: 0; font-size: 0; text-align: center;">
-                
-                  <table class="column column-one-half" style="text-align: center; background-color: #ffffff; padding: 0; display: inline-block;">
+                  <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 226px; display: inline-block;" role="presentation">
                     <tr>
-                      <td class="siteLogo" style="text-align: center; background-color: #ffffff; padding: 0 0 5px 0; display: inline-block; width: 175px;">
-                        <a href="https://justforyouiqaluit.ca" target="_blank"><img src="img/justforyou-siteBrand_320x80.jpg" alt="site branding" width="175"></a>
+                      <td class="siteLogo" style="text-align: center; background-color: #ffffff; padding: 0 20px 0 20px; display: inline-block; width: 176px;">
+                        <a href="https://justforyouiqaluit.ca" target="_blank"><img src="img/justforyou-siteBrand_320x80.jpg" alt="site branding" width="176"></a>
                       </td>
                     </tr>
 
-                    <tr>
-                      <td>
-
                     <!-- BUTTON MODULE -->
                     <tr>
-                      <td align="center" style="padding: 0;"> <!-- align & padding -->
-                        <table style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
+                      <td align="center" style="padding: 10px 0 0 0;"> <!-- align & padding -->
+                        <table border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
                         
                           <tr>
-                            <td align="center" bgcolor="#0B7E9A"> <!-- align, border-radius, bgcolor -->
-                              <a class="recipe-btn"  href="https://example.com" target="_blank" style="font-size: 20px; font-weight: normal; text-decoration: none; color: #0B7E9A; background-color: #ffffff; padding: 10px 25px; border: 1px solid #0B7E9A; display: inline-block;">visit WEBSITE</a>
+                            <td> <!-- align, border-radius, bgcolor -->
+                              <a class="recipe-btn" href="https://example.com" target="_blank" style="font-size: 20px; font-weight: normal; font-family: Helvetica, Arial, sans-serif; text-decoration: none; color: #0B7E9A; background-color: #ffffff; padding: 12px 24px; border: 1px solid #0B7E9A; display: inline-block;">visit WEBSITE</a>
                             </td>
                           </tr>
 
@@ -554,17 +558,54 @@
                       </td>
                     </tr>
 
-                      </td>
-                    </tr>
                   </table>
+
                 </td>
               </tr>
             </table>
+
+          <!--[if mso]>
+            </table>
+            </tr>
+            </td>
+          <![endif]-->
+
           </td>
         </tr>
         <!-- END WEBSITE BANNER SECTION -->
 
         <!-- START FLYER SECTION -->
+        <tr>
+          <td bgcolor="#33C3DF" style="padding: 0; display: block; line-height: 0;"> <!-- Padding Vertically -->
+            <table width="100%" style="border-spacing: 0; background-color: #33c3df;" role="presentation"> <!-- Standard table -->
+
+              <tr>
+                <td class="column-wrapper" >
+                  <table class="column column-one-half" style="padding: 0; vertical-align: middle; width: 100%; max-width: 280px; display: inline-block; text-align: left;" role="presentation">
+                    <tr>
+                      <td>
+                        <h3 style="font-size: 28px; font-weight: bold; line-height: 32px; font-family: Arial, Helvetica, sans-serif; color: #ffffff; margin: 0;">Inuulisautinut Niuvirvik</h3>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p style="font-size: 16px; font-weight: normal; font-family: Arial, Helvetica, sans-serif; color: #ffffff; margin: 0;">“a place to get things for healthy body and mind”</p>
+                      </td>
+                    </tr>
+                  </table>
+                  <table align="right" class="column column-one-half" style="padding: 0; vertical-align: middle; width: 100%; max-width: 280px; display: inline-block; text-align: left;" role="presentation">
+                    <tr>
+                      <td align="right" style="text-align: right;">
+                        <a href="https://justforyouiqaluit.ca/flyers/" target="_blank"><img src="img/flyer_img.png" alt="Inuulisautinut Niuvirvik flyer" width="231px"></a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
         <!-- END FLYER SECTION -->
 
         <!-- START FOOTER -->
