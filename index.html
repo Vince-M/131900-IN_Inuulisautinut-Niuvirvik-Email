@@ -190,8 +190,19 @@
         max-width: 100% !important;
         width: 100% !important;
       }
-      .column-wrapper.fluid-hybrid {
+      /* .column-wrapper.fluid-hybrid {
         padding: 15px 30px !important;
+      } */
+      .column.column-two-third {
+        margin-bottom: 20px !important;
+      }
+      .siteBranding {
+        width: 100% !important;
+        padding: 0 20px 0 10px !important;
+      }
+      .site-btn {
+        text-align: left !important;
+        padding: 10px 0 0 20px !important;
       }
     }
 
@@ -512,45 +523,56 @@
 
         <!-- START WEBSITE BANNER SECTION -->
         <tr>
-          <td style="padding: 20px; display: block;"> <!-- Padding Vertically -->
+          <td style="padding: 20px;"> <!-- Padding Vertically -->
+            <table width="100%" style="border-spacing: 0;" role="presentation"> <!-- Standard table -->
 
-            <!--[if mso]>
-              <table width="100%" style="border-spacing: 0; width: 100%; max-width: 560px; text-align: center;" role="presentation">
               <tr>
-              <td class="column-wrapper" style="padding: 0; font-size: 0; text-align: left;">
-            <![endif]-->
+                <td class="column-wrapper fluid-hybrid" style="padding: 0; font-size: 0; background-color: #ffffff; text-align: center;"> <!-- Column Wrapper media query padding -->
 
-            <table width="100%" style="border-spacing: 0; width: 100%; max-width: 560px; text-align: center;" role="presentation"> <!-- Standard table -->
-              <tr>
-                <td class="column-wrapper" style="padding: 0; font-size: 0; text-align: left;"> <!-- Column Wrapper media query padding -->
-
-                  <table class="column column-one-half" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 334px; display: inline-block;" role="presentation"> <!-- Column (300px width) -->
+                  <!--[if mso]>
+                    <table width="100%" style="border-spacing: 0;" role="presentation">
                     <tr>
-                      <td class="websiteBanner" style="text-align: left; background-color: #ffffff; padding: 0; display: block;">
-                        <a href="https://justforyouiqaluit.ca/" target="_blank"><img src="img/iPad_website_668x200.jpg" alt="website" width="334"></a>
+                    <td width="334" valign="middle" style="padding: 0;">
+                  <![endif]-->
+
+                  <table class="column column-two-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 334px; display: inline-block; background-color: #ffffff;" role="presentation"> <!-- Column (300px width) -->
+                    <tr>
+                      <td class="padding" style="padding: 0;">
+
+                        <table class="content" style="border-spacing: 0; text-align: center; font-size: 0; line-height: 0;" role="presentation">
+                          <tr>
+                            <td style="padding: 0; background-color: #ffffff;">
+                              <a href="https://justforyouiqaluit.ca/" target="_blank">
+                                <img src="img/iPad_website_668x260.jpg" alt="website" width="334">
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+
                       </td>
                     </tr>
                   </table>
 
                   <!--[if mso]>
-                   </td><td width="226" valign="top" style="padding: 0;" dir="ltr">
+                   </td><td width="226" valign="middle" style="padding: 0;">
                   <![endif]-->
 
-                  <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 226px; display: inline-block;" role="presentation">
+                  <table class="column column-one-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 226px; display: inline-block; background-color: #ffffff; text-align: center;" role="presentation">
                     <tr>
-                      <td class="siteLogo" style="text-align: center; background-color: #ffffff; padding: 0 20px 0 20px; display: inline-block; width: 176px;">
-                        <a href="https://justforyouiqaluit.ca" target="_blank"><img src="img/justforyou-siteBrand_320x80.jpg" alt="site branding" width="176"></a>
+                      <td class="padding siteBranding" style="padding: 0;" align="center" width="226px">
+
+                        <a href="https://justforyouiqaluit.ca" target="_blank"><img src="img/justforyou-siteBrand_320x80.jpg" alt="Site Branding" width="176" style="max-width: 176px;"></a>
                       </td>
                     </tr>
 
                     <!-- BUTTON MODULE -->
                     <tr>
-                      <td align="center" style="padding: 10px 0 0 0;"> <!-- align & padding -->
+                      <td class="site-btn" align="center" style="padding: 10px 0 0 0;"> <!-- align & padding -->
                         <table border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
                         
                           <tr>
                             <td> <!-- align, border-radius, bgcolor -->
-                              <a class="recipe-btn" href="https://example.com" target="_blank" style="font-size: 20px; font-weight: normal; font-family: Helvetica, Arial, sans-serif; text-decoration: none; color: #0B7E9A; background-color: #ffffff; padding: 12px 24px; border: 1px solid #0B7E9A; display: inline-block;">visit WEBSITE</a>
+                              <a class="recipe-btn" href="https://justforyouiqaluit.ca/" target="_blank" style="font-size: 20px; font-weight: normal; font-family: Helvetica, Arial, sans-serif; text-decoration: none; color: #0B7E9A; background-color: #ffffff; padding: 12px 24px; border: 1px solid #0B7E9A; display: inline-block;">visit WEBSITE</a>
                             </td>
                           </tr>
 
@@ -560,15 +582,15 @@
 
                   </table>
 
+                  <!--[if mso]>
+                    </table>
+                    </tr>
+                    </td>
+                  <![endif]-->
+
                 </td>
               </tr>
             </table>
-
-          <!--[if mso]>
-            </table>
-            </tr>
-            </td>
-          <![endif]-->
 
           </td>
         </tr>
