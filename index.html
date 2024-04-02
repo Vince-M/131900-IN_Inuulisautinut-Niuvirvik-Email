@@ -46,8 +46,6 @@
       margin-top: 0;
     }
 
- 
-
     img {
       border: 0;
       width: 100%;
@@ -58,25 +56,25 @@
       font-size: 16px;
     }
 
-      /*-- SIMPLE TWO COLUMNS LESSON --*/
-      .column-wrapper {
-      padding: 0;
-      font-size: 0;
-      text-align: center;
-      }
-      .column {
-         border-spacing: 0;
-         vertical-align: top;
-         width: 100%;
-         display: inline-block;
-         color: #ffffff;
-      }
-      .column-one-half {
-         max-width: 300px;
-      }
-      .padding {
-         padding: 20px;
-      }
+    /*-- SIMPLE TWO COLUMNS LESSON --*/
+    .column-wrapper {
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+    }
+    .column {
+        border-spacing: 0;
+        vertical-align: top;
+        width: 100%;
+        display: inline-block;
+        color: #ffffff;
+    }
+    .column-one-half {
+        max-width: 300px;
+    }
+    .padding {
+        padding: 20px;
+    }
 
     u + .body .gmail-blend-screen {
       background: #000000;
@@ -111,32 +109,31 @@
     }
 
     a.recipe-btn,
+    a.site-btn,
     a.lifestyle-btn,
     a.optical-btn {
         transition: all .7s !important;
     }
-    
-    .recipe-title,
+    h3.recipe-title {
+      color: #0B7E9A;
+    }
     .recipe-btn-title {
         color: #0B7E9A !important;
     }
-    .recipe-btn:hover {
+    .recipe-btn:hover,
+    .site-btn:hover {
       background-color: #0B7E9A !important;
       color: #ffffff !important;
     }
-
-    .lifestyle-title,
-    .lifestyle-btn-title {
-        color: #33C3DF !important;
+    h3.lifestyle-title {
+      color: #33C3DF;
     }
     .lifestyle-btn:hover {
       background-color: #33C3DF !important;
       color: #ffffff !important;
     }
-
-    .optical-title,
-    .optical-btn-title {
-        color: #91CA45 !important;
+    h3.optical-title {
+      color: #91CA45;
     }
     .optical-btn:hover {
       background-color: #91CA45 !important;
@@ -168,10 +165,13 @@
 
     @media screen and (max-width: 599.98px) {
       h2 {
-        font-size: 22px !important;
+        font-size: 20px !important;
       }
       h3 {
         margin: 20px 0 20px 0 !important;
+      }
+      .recipeBanner {
+        padding-left: 15px !important;
       }
       .column-one-half {
       	max-width: 600px !important;
@@ -182,9 +182,9 @@
       .column-wrapper {
         padding: 15px 0 !important;
       }
-      /* .padding {
+      .padding {
         padding: 5px 20px 0 !important;
-      } */
+      }
       .column-wrapper.fluid-hybrid .column,
       .column-wrapper.fluid-hybrid .column img {
         max-width: 100% !important;
@@ -199,10 +199,6 @@
       .siteBranding {
         width: 100% !important;
         padding: 0 20px 0 10px !important;
-      }
-      .site-btn {
-        text-align: left !important;
-        padding: 10px 0 0 20px !important;
       }
     }
 
@@ -219,7 +215,9 @@
         background: #2d2d2d !important;
         color: #ffffff !important;
       }
-      h3 {
+      h3.recipe-title,
+      h3.lifestyle-title,
+      h3.optical-title {
         color: #ffffff;
       }
       p {
@@ -328,7 +326,7 @@
                   <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 280px; display: inline-block;" role="presentation" dir="ltr">
                     <tr>
                       <td class="padding" style="padding: 0 20px 0 20px; ">
-                        <h3 class="recipe-title" style="font-size: 22px; font-weight: 400; letter-spacing: 1px; color: #0B7E9A;">Simple Cheese Fondue</h3>
+                        <h3 class="recipe-title" style="font-size: 22px; font-weight: 400; letter-spacing: 1px;">Simple Cheese Fondue</h3>
                       </td>
                     </tr>
 
@@ -404,7 +402,7 @@
                   <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 280px; display: inline-block;" role="presentation">
                     <tr>
                       <td class="padding" style="padding: 0 20px 0 20px; ">
-                        <h3 class="lifestyle-title"  style="font-size: 22px; font-weight: 400; letter-spacing: 1px; color: #33C3DF;">January Nutrition Goals</h3>
+                        <h3 class="lifestyle-title"  style="font-size: 22px; font-weight: 400; letter-spacing: 1px;">January Nutrition Goals</h3>
                       </td>
                     </tr>
 
@@ -480,7 +478,7 @@
                   <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 280px; display: inline-block;" role="presentation" dir="ltr">
                     <tr>
                       <td class="padding" style="padding: 0 20px 0 20px; ">
-                        <h3 class="optical-title" style="font-size: 22px; font-weight: 400; letter-spacing: 1px; color: #91CA45;">Optical Center Serving Nunavut</h3>
+                        <h3 class="optical-title" style="font-size: 22px; font-weight: 400; letter-spacing: 1px;">Optical Center Serving Nunavut</h3>
                       </td>
                     </tr>
 
@@ -524,7 +522,7 @@
         <!-- START WEBSITE BANNER SECTION -->
         <tr>
           <td style="padding: 20px;"> <!-- Padding Vertically -->
-            <table width="100%" style="border-spacing: 0;" role="presentation"> <!-- Standard table -->
+            <table width="100%" style="border-spacing: 0; margin-bottom: 20px;" role="presentation"> <!-- Standard table -->
 
               <tr>
                 <td class="column-wrapper fluid-hybrid" style="padding: 0; font-size: 0; text-align: center;"> <!-- Column Wrapper media query padding -->
@@ -558,21 +556,15 @@
                   <![endif]-->
 
                   <table class="column column-one-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 226px; display: inline-block; text-align: center;" role="presentation">
-                    <tr>
-                      <td class="padding siteBranding" style="padding: 0;" align="center" width="226px">
-
-                        <a href="https://justforyouiqaluit.ca" target="_blank"><img src="img/justforyou-siteBrand_640x160.png" alt="Site Branding" width="175" style="max-width: 175px;"></a>
-                      </td>
-                    </tr>
-
+                  
                     <!-- BUTTON MODULE -->
                     <tr>
-                      <td class="site-btn" align="center" style="padding: 10px 0 0 0;"> <!-- align & padding -->
+                      <td align="left" style="padding: 20px 0 0 20px;"> <!-- align & padding -->
                         <table border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
                         
                           <tr>
                             <td> <!-- align, border-radius, bgcolor -->
-                              <a class="recipe-btn" href="https://justforyouiqaluit.ca/" target="_blank" style="font-size: 20px; font-weight: normal; font-family: Helvetica, Arial, sans-serif; text-decoration: none; color: #0B7E9A; background-color: #ffffff; padding: 12px 24px; border: 1px solid #0B7E9A; display: inline-block;">visit WEBSITE</a>
+                              <a class="site-btn" href="https://justforyouiqaluit.ca/" target="_blank" style="font-size: 20px; font-weight: normal; font-family: Helvetica, Arial, sans-serif; text-decoration: none; color: #0B7E9A; background-color: #ffffff; padding: 12px 24px; border: 1px solid #0B7E9A; display: inline-block;">visit WEBSITE</a>
                             </td>
                           </tr>
 
@@ -595,40 +587,6 @@
           </td>
         </tr>
         <!-- END WEBSITE BANNER SECTION -->
-
-        <!-- START FLYER SECTION -->
-        <tr>
-          <td bgcolor="#33C3DF" style="padding: 0; display: block; line-height: 0;"> <!-- Padding Vertically -->
-            <table width="100%" style="border-spacing: 0; background-color: #33c3df;" role="presentation"> <!-- Standard table -->
-
-              <tr>
-                <td class="column-wrapper" >
-                  <table class="column column-one-half" style="padding: 0; vertical-align: middle; width: 100%; max-width: 280px; display: inline-block; text-align: left;" role="presentation">
-                    <tr>
-                      <td>
-                        <h3 style="font-size: 28px; font-weight: bold; line-height: 32px; font-family: Arial, Helvetica, sans-serif; color: #ffffff; margin: 0;">Inuulisautinut Niuvirvik</h3>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p style="font-size: 16px; font-weight: normal; font-family: Arial, Helvetica, sans-serif; color: #ffffff; margin: 0;">“a place to get things for healthy body and mind”</p>
-                      </td>
-                    </tr>
-                  </table>
-                  <table align="right" class="column column-one-half" style="padding: 0; vertical-align: middle; width: 100%; max-width: 280px; display: inline-block; text-align: left;" role="presentation">
-                    <tr>
-                      <td align="right" style="text-align: right;">
-                        <a href="https://justforyouiqaluit.ca/flyers/" target="_blank"><img src="img/flyer_img.png" alt="Inuulisautinut Niuvirvik flyer" width="231px"></a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-
-            </table>
-          </td>
-        </tr>
-        <!-- END FLYER SECTION -->
 
         <!-- START FOOTER -->
         <!-- END FOOTER -->
